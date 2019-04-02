@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <computed></computed>
+    <!--<img src="./assets/logo.png">-->
+    <!--<router-view/>-->
   </div>
 </template>
 
 <script>
+import Computed from './components/base/computed'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {Computed}
 }
 </script>
 
