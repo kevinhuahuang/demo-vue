@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <computed></computed>
+    <!--<Computed></Computed>-->
+    <StyleBind></StyleBind>
     <!--<img src="./assets/logo.png">-->
     <!--<router-view/>-->
   </div>
 </template>
 
 <script>
-import Computed from './components/base/computed'
+import Computed from './components/base/Computed'
+import StyleBind from './components/base/StyleBind'
 export default {
   name: 'App',
-  components: {Computed}
+  components: {StyleBind, Computed}
 }
 </script>
 

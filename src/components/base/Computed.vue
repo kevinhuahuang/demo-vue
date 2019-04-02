@@ -23,7 +23,7 @@ method:
 */
 <script>
 export default {
-  name: 'computed',
+  name: 'Computed',
   data () {
     return {
       headNum: 18,
@@ -55,6 +55,7 @@ export default {
     }
   },
   watch: { // watch 与computed比较，代码是命令式而且重复了
+    // 当需要在数据变化时执行异步或开销较大的操作使用
     headNum: function (newV, oldV) {
       this.rabbitNum = (this.feetNum - newV * 2) / 2
     },
