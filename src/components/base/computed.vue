@@ -53,6 +53,14 @@ export default {
     getSubtract () {
       return this.rabbitNum - this.chickenNum
     }
+  },
+  watch: { // watch 与computed比较，代码是命令式而且重复了
+    headNum: function (newV, oldV) {
+      this.rabbitNum = (this.feetNum - newV * 2) / 2
+    },
+    feetNum: function (newV, oldV) {
+      this.rabbitNum = (newV - this.headNum * 2) / 2
+    }
   }
 }
 </script>
