@@ -2,17 +2,17 @@
   <div>
     <!--:class的值是一个对象, 等号左侧是css定义中的类，右侧是data中定义的布尔值，布尔值为true，则渲染这个类-->
     <!--注意，css定义类使用的是kebab-case，但在对象中引用时需使用加上引号,否则报错-->
-    <div :class="{squareClass: isSquare, 'yellow-background': isYellow}">小矩形</div>
+    <div :class="{squareClass: isSquare, 'yellow-background': isYellow}">对象语法</div>
     <!--class与:class并存-->
-    <div class='pink-background' :class="{'circleClass': isCircle}">小圆形</div>
+    <div class='pink-background' :class="{'circleClass': isCircle}">普通类与绑定类共存</div>
     <!--绑定的数据对象不内联定义在模板里，都写在data中-->
-    <div :class="shapeObj">大矩形</div>
+    <div :class="shapeObj">数据对象在data中定义</div>
     <!--绑定一个返回对象的计算属性-->
-    <div :class="computedCssObj">大圆形</div>
+    <div :class="computedCssObj">数据对象为计算属性</div>
     <!--数组语法 ,数组中的值是定义在data中的变量，其变量值对应该的是css中定义的类，-->
-    <div :class="[squareBigBigClass, yellowBackgroundClass]">超大矩形</div>
+    <div :class="[squareBigBigClass, yellowBackgroundClass]">数组语法</div>
     <!--使用三元表达式, 表达式用中括号包围-->
-    <div :class="[isSquare ? 'squareClass' : 'circleClass']">小矩形</div>
+    <div :class="[isSquare ? 'squareClass' : 'circleClass']">三元表达式</div>
   </div>
 </template>
 
@@ -53,35 +53,35 @@ export default {
 <style scoped>
   .squareClass {
     margin-top: 5px;
-    width: 40px;
+    width: 140px;
     height: 40px;
     border: 1px solid black
   }
   .circleClass {
     margin-top: 5px;
-    width: 40px;
-    height: 40px;
+    width: 140px;
+    height: 140px;
     border: 2px solid black;
-    border-radius: 40px;
+    border-radius: 140px;
   }
   .square-big {
     margin-top: 5px;
-    width: 60px;
+    width: 220px;
     height: 60px;
     border: 2px solid black
   }
   .square-big-big {
     margin-top: 5px;
-    width: 80px;
+    width: 180px;
     height: 80px;
     border: 4px solid black
   }
   .circle-big {
     margin-top: 5px;
-    width: 60px;
-    height: 60px;
+    width: 160px;
+    height: 160px;
     border: 4px solid black;
-    border-radius: 40px;
+    border-radius: 160px;
   }
   .yellow-background {
     background-color: yellow;
