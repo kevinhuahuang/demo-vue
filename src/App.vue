@@ -2,7 +2,8 @@
   <div id="app">
     <!--<Computed></Computed>-->
     <!--<StyleBind></StyleBind>-->
-    <ClassBind></ClassBind>
+    <!--<ClassBind></ClassBind>-->
+    <Vif></Vif>
     <!--<img src="./assets/logo.png">-->
     <!--<router-view/>-->
   </div>
@@ -12,9 +13,10 @@
 import Computed from './components/base/Computed'
 import StyleBind from './components/base/StyleBind'
 import ClassBind from './components/base/ClassBind'
+import Vif from './components/base/Vif'
 export default {
   name: 'App',
-  components: {ClassBind, StyleBind, Computed}
+  components: {Vif, ClassBind, StyleBind, Computed}
 }
 </script>
 
