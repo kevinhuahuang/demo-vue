@@ -5,7 +5,8 @@
     <!--<ClassBind></ClassBind>-->
     <!--<Vif></Vif>-->
     <!--<Vfor></Vfor>-->
-    <Von></Von>
+    <!--<Von></Von>-->
+    <Vmodel></Vmodel>
     <!--<img src="./assets/logo.png">-->
     <!--<router-view/>-->
   </div>
@@ -18,9 +19,10 @@ import ClassBind from './components/base/ClassBind'
 import Vif from './components/base/Vif'
 import Vfor from './components/base/Vfor'
 import Von from './components/base/Von'
+import Vmodel from './components/base/Vmodel'
 export default {
   name: 'App',
-  components: {Von, Vfor, Vif, ClassBind, StyleBind, Computed}
+  components: {Vmodel, Von, Vfor, Vif, ClassBind, StyleBind, Computed}
 }
 </script>
 
