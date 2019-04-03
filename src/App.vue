@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <!--<Computed></Computed>-->
-    <StyleBind></StyleBind>
+    <!--<StyleBind></StyleBind>-->
+    <ClassBind></ClassBind>
     <!--<img src="./assets/logo.png">-->
     <!--<router-view/>-->
   </div>
@@ -10,9 +11,10 @@
 <script>
 import Computed from './components/base/Computed'
 import StyleBind from './components/base/StyleBind'
+import ClassBind from './components/base/ClassBind'
 export default {
   name: 'App',
-  components: {StyleBind, Computed}
+  components: {ClassBind, StyleBind, Computed}
 }
 </script>
 
