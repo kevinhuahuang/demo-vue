@@ -7,7 +7,8 @@
     <!--<Vfor></Vfor>-->
     <!--<Von></Von>-->
     <!--<Vmodel></Vmodel>-->
-    <SlotParent></SlotParent>
+    <!--<SlotParent></SlotParent>-->
+    <SlotParentScope></SlotParentScope>
     <!--<img src="./assets/logo.png">-->
     <!--<router-view/>-->
   </div>
@@ -22,9 +23,10 @@ import Vfor from './components/base/Vfor'
 import Von from './components/base/Von'
 import Vmodel from './components/base/Vmodel'
 import SlotParent from './components/base/SlotParent'
+import SlotParentScope from './components/base/SlotParentScope'
 export default {
   name: 'App',
-  components: {SlotParent, Vmodel, Von, Vfor, Vif, ClassBind, StyleBind, Computed}
+  components: {SlotParentScope, SlotParent, Vmodel, Von, Vfor, Vif, ClassBind, StyleBind, Computed}
 }
 </script>
 
